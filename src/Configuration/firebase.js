@@ -8,13 +8,7 @@ import { getAuth } from "firebase/auth";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyAgTQIYhR8hd829I_jsQ7CI5rxRDWgEOf4",
-  authDomain: "bingebox-dev.firebaseapp.com",
-  projectId: "bingebox-dev",
-  storageBucket: "bingebox-dev.firebasestorage.app",
-  messagingSenderId: "854710181711",
-  appId: "1:854710181711:web:bd9020de7a6ff6f883ef3a",
-  measurementId: "G-VDEPXPS6MZ"
+  
 };
 
 // Initialize Firebase
