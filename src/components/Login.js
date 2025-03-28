@@ -6,6 +6,7 @@ import { auth } from '../Configuration/firebase';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { addUser } from '../utils/userSlice';
+import { defaultAvatar, netflixLogo } from '../Configuration/Constants';
 
 const Login = () => {
   const [isSigninForm,setIsSigninForm] = useState(true);
@@ -29,7 +30,7 @@ const Login = () => {
               const user = userCredential.user;
               console.log(user);
               updateProfile(auth.currentUser, {
-                displayName: name.current.value, photoURL: "https://avatars.githubusercontent.com/u/67556050?v=4"
+                displayName: name.current.value, photoURL: defaultAvatar
               }).then(() => {
                 // Profile updated!
                 // ...
@@ -68,7 +69,7 @@ const Login = () => {
     <div className=''>
         <Header/>
         <div className='absolute'>
-            <img src='https://assets.nflxext.com/ffe/siteui/vlv3/04ef06cc-5f81-4a8e-8db0-6430ba4af286/web/IN-en-20250224-TRIFECTA-perspective_3a9c67b5-1d1d-49be-8499-d179f6389935_large.jpg'/>
+            <img src={netflixLogo}/>
         </div>
         <form className=' absolute bg-black w-1/5 my-40 flex flex-col justify-center items-center mx-auto right-0 left-0 bg-opacity-60 rounded-xl' onSubmit={(e)=>e.preventDefault()} >
         <p className='text-3xl text-white'>Sign In</p>

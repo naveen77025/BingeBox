@@ -21,24 +21,7 @@ const Body= ()=> {
     }
   ]);
 
-  useEffect(()=>{
-    console.log("Auth state listener attached");
-    onAuthStateChanged(auth, (user) => {
-        console.log("Auth state changed:", user); // Log user changes
-        if (user) {
-          // User is signed in, see docs for a list of available properties
-          // https://firebase.google.com/docs/reference/js/auth.user
-          const updatedUser = user;
-          dispatch(addUser({email:updatedUser.email,displayName:updatedUser.displayName,photoURL:updatedUser.photoURL,uid:updatedUser.uid}));
-          // ...
-        } else { 
-          // User is signed out
-          // ...
-          dispatch(removeUser());
-        }
-      });
-      //return () => unsubscribe();
-  },[])
+  
   return (
     <div >
       <RouterProvider router={router}/>
