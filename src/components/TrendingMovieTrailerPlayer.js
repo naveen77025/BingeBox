@@ -1,0 +1,23 @@
+import React from 'react'
+import { useSelector } from 'react-redux'
+
+const TrendingMovieTrailerPlayer = () => {
+    const trendingMovieInfo=useSelector(store=>store.movie.trendingMovieTrailerInfo);
+    if(!trendingMovieInfo) return;
+    const {key}=trendingMovieInfo;
+    console.log(key);
+  return (
+    <div className='absolute top-0 left-0 w-full h-[100vh] -z-10 overflow-hidden'>
+        <iframe className='w-full h-[100vh] object-cover' 
+        src={`https://www.youtube.com/embed/${key}?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&playlist=${key}`}
+        title="YouTube video player"
+        frameBorder="0" 
+        allow="autoplay; fullscreen"  
+        referrerPolicy="strict-origin-when-cross-origin" 
+        allowFullScreen></iframe>
+        
+    </div>
+  )
+}
+
+export default TrendingMovieTrailerPlayer

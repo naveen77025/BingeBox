@@ -28,7 +28,7 @@ const Login = () => {
             .then((userCredential) => {
               // Signed up 
               const user = userCredential.user;
-              console.log(user);
+              //console.log(user);
               updateProfile(auth.currentUser, {
                 displayName: name.current.value, photoURL: defaultAvatar
               }).then(() => {
@@ -46,7 +46,7 @@ const Login = () => {
               const errorCode = error.code;
               const errorMessage = error.message;
               setValidationErrorMessage(errorMessage);
-              console.log(errorCode + " - " + errorMessage);
+              //console.log(errorCode + " - " + errorMessage);
             });
     }
     else{
@@ -54,14 +54,14 @@ const Login = () => {
             .then((userCredential) => {
               // Signed in 
               const user = userCredential.user;
-              console.log(user);
+              //console.log(user);
               navigate("/browse");
             })
             .catch((error) => {
               const errorCode = error.code;
               const errorMessage = error.message;
               setValidationErrorMessage(errorMessage);
-              console.log(errorCode + " - " + errorMessage);
+              //console.log(errorCode + " - " + errorMessage);
             });
     }
   }
