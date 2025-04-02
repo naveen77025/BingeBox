@@ -4,7 +4,7 @@ import { addNowPalying } from "../utils/movieSlice";
 
 const useNowPlayingMovies=()=>{
     const dispatch= useDispatch();
-    useEffect(()=>{const url = 'https://api.themoviedb.org/3/movie/now_playing?page=1';
+    useEffect( ()=> {const url = 'https://api.themoviedb.org/3/movie/now_playing?page=1';
         const options = {
         method: 'GET',
         headers: {

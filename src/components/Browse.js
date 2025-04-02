@@ -2,14 +2,24 @@ import React from 'react'
 import Header from './Header'
 import useNowPlayingMovies from '../Hooks/useNowPalyingMovies';
 import TrendingMovieTrailer from './TrendingMovieTrailer';
+import SecondaryContainer from './SecondaryContainer';
+import useGetHorrorMovieList from '../Hooks/useGetHorrorMovieList';
+import useGetMysteryMovieList from '../Hooks/useGetMysteryMovieList';
+import useGetscifiMovieList from '../Hooks/useGetscifiMovieList';
+import useGetThrillerMovieList from '../Hooks/useGetThrillerMovieList';
 
 const Browse = () => {
   useNowPlayingMovies();
+  useGetHorrorMovieList();
+  useGetMysteryMovieList();
+  useGetscifiMovieList();
+  useGetThrillerMovieList();
   return (
     <div>
       <Header/>
-      <div className='pt-96 pl-16'>
+      <div className='pt-96'>
         <TrendingMovieTrailer/>
+        <SecondaryContainer/>
       </div>
       {
         /*

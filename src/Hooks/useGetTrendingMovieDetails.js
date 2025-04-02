@@ -13,7 +13,7 @@ const useGetTrendingMovieDetails = () => {
         .then(json => {
             //console.log("inside movie trailer")
             //console.log(json.results[0]);
-            dispatch(addTrending(json.results[2]));
+            dispatch(addTrending(json.results[5]));
         })
         .catch(err => console.error(err));
     },[]);
