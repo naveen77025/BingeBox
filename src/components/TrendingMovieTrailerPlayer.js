@@ -7,7 +7,7 @@ const TrendingMovieTrailerPlayer = () => {
     const {key}=trendingMovieInfo;
    // console.log(key);
   return (
-    <div className='absolute top-0 left-0 w-screen aspect-video h-full -z-10 overflow-hidden'>
+    <div className='absolute top-0 left-0 w-full aspect-video h-full -z-10 overflow-hidden'>
         <iframe className='w-screen aspect-video h-full object-cover' 
         src={`https://www.youtube.com/embed/${key}?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&playlist=${key}&showinfo=0&disablekb=1`}
         title="YouTube video player"

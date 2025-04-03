@@ -8,7 +8,7 @@ const SecondaryContainer = () => {
     const movieData= useSelector(store=>store.movie);
     //console.log(movieData);
   return (
-    <div className=' mt-10 relative z-20 bg-black'>
+    <div className=' mt-10 relative z-20 bg-black flex flex-col gap-6'>
         <MovieList title="Now Playing" movieData={movieData.nowPlaying?.results}/>
         <MovieList title="Horror" movieData={movieData.horrorMoviesList}/>
         <MovieList title="Mystery" movieData={movieData.mysteryMovieList}/>
