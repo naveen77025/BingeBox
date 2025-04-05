@@ -7,6 +7,8 @@ import useGetHorrorMovieList from '../Hooks/useGetHorrorMovieList';
 import useGetMysteryMovieList from '../Hooks/useGetMysteryMovieList';
 import useGetscifiMovieList from '../Hooks/useGetscifiMovieList';
 import useGetThrillerMovieList from '../Hooks/useGetThrillerMovieList';
+import { useSelector } from 'react-redux';
+import GptSearch from './GptSearch';
 
 const Browse = () => {
   useNowPlayingMovies();
@@ -14,22 +16,16 @@ const Browse = () => {
   useGetMysteryMovieList();
   useGetscifiMovieList();
   useGetThrillerMovieList();
+  const gptSearch= useSelector(store=>store.gptSearch);
+  const gptSearchEnabled=gptSearch.searchEnabled;
   return (
     <div>
       <Header/>
-      <div className='pt-96'>
+      {
+        gptSearchEnabled?<GptSearch/>:<div className='pt-96'>
         <TrendingMovieTrailer/>
         <SecondaryContainer/>
       </div>
-      {
-        /*
-        Trailer area
-        Movies List
-          - Now Palying
-          - top 10
-          - genre top
-          - more
-        */
       }
     </div>
   )
