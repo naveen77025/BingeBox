@@ -1,4 +1,5 @@
-# BingeBox
+# BingeBox 
+    -- live link : [text](https://binge-box-brown.vercel.app/)
     -- Created raect app using create-react-app
     -- installed tailwind css
     -- added Tailwind CSS IntelliSense Extension in VS code for auto complete and suggestions.
