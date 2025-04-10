@@ -28,6 +28,8 @@
     -- usePopularMovies Custom hook
     -- GPT Search Page
     -- GPT Search Bar
+    -- Open AI is used to search for movies.
+    -- Suggested movies are fetched from TMDB 
 
 # Features
     ## login / signup

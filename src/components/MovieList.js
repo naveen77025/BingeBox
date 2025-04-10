@@ -18,7 +18,7 @@ import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
               setShowTooltip(false); 
             }
         };
-        console.log(movieData);
+        //console.log(movieData);
         return (<div className="px-3 overflow-hidden relative">
             <h1 className="text-3xl text-white my-2">{title}</h1>
             <div className="relative">

@@ -8,7 +8,7 @@ import { getAuth } from "firebase/auth";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyAgTQIYhR8hd829I_jsQ7CI5rxRDWgEOf4",
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
   authDomain: "bingebox-dev.firebaseapp.com",
   projectId: "bingebox-dev",
   storageBucket: "bingebox-dev.firebasestorage.app",
