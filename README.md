@@ -1,7 +1,7 @@
 # BingeBox 
-# live link : [Live](https://binge-box-brown.vercel.app/)
+# Live link : [Live](https://binge-box-brown.vercel.app/)
 --Few Internt Service Providers block TMDB API's, live link may not work. Check out the demo link below.
-# demo link: [demo](https://drive.google.com/file/d/1x2KbUuyRdIwRtHSKh-CKxRMc2vNkaIIk/view?usp=sharing)
+# Demo link: [Demo](https://drive.google.com/file/d/14PYLjWvQL4qRZilMc9ysdwgCmUv5znhT/view)
     -- Created raect app using create-react-app
     -- installed tailwind css
     -- added Tailwind CSS IntelliSense Extension in VS code for auto complete and suggestions.
