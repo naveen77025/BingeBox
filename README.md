@@ -29,7 +29,8 @@
     -- GPT Search Page
     -- GPT Search Bar
     -- Open AI is used to search for movies.
-    -- Suggested movies are fetched from TMDB 
+    -- Suggested movies are fetched from TMDB
+    -- displayed results max upto 10 movies
 
 # Features
     ## login / signup
