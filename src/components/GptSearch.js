@@ -78,7 +78,7 @@ const GptSearch = () => {
         <div className="flex flex-wrap justify-center mt-8 w-full gap-2">
           {gptSearchMovieListDetailsTmdb &&
             gptSearchMovieListDetailsTmdb.map((movie) => (movie?.poster_path &&
-              <MovieCard key={movie.id} path={movie.poster_path} />
+              <MovieCard key={movie.id} path={movie.poster_path} id={movie.id} />
             ))}
         </div>
       </div>

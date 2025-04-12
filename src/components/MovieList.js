@@ -36,7 +36,7 @@ import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
                 <div className="flex">
                   {movieData &&
                     movieData.map((movie) => (
-                      <MovieCard key={movie.id} path={movie.poster_path} />
+                      <MovieCard key={movie.id} path={movie.poster_path} id={movie.id} />
                     ))}
                 </div>
               </div>
